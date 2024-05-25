@@ -19,7 +19,7 @@ function App() {
       <h1>PNV Team !!</h1>
       <p>Here are some PNV trainers and educators, do you know them?</p>
      {/* How to loop on ALL_PNV_TEACHERS list ? */}
-      {ALL_PNV_TEACHERS.map((u, i) => (  <User user={u}/>))}
+      {ALL_PNV_TEACHERS.map((u, i) => (  <User key={i} user={u}/>))}
     </div>
   );
 }
